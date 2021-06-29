@@ -14,18 +14,18 @@ function createCamera(){
     camera.position.set(0, 0, OriginZ);
 
     camera.tick = () =>{
-        posZ = (((posZ + 0.1) % posZMax*inversionFactor));
+        // posZ = (((posZ + 0.1) % posZMax*inversionFactor));
 
-        if(((posZ + 0.1) % posZMax*inversionFactor)  >= (posZMax - 0.1)) {
-            // inversionFactor *= -1;
-            posZ = OriginZ;
-            // console.log("___________________________"+posZ+"________________________________");
-            // posZ = (((posZ + 0.1) % posZMax*inversionFactor));
-        }
-        // console.log(posZ+"|||||||"+inversionFactor);
-        // if(posZ <= ) 
-        camera.position.z = posZ * inversionFactor ;
-        // console.log(camera.position.z); 
+        // if(((posZ + 0.1) % posZMax*inversionFactor)  >= (posZMax - 0.1)) {
+        //     // inversionFactor *= -1;
+        //     posZ = OriginZ;
+        //     // console.log("___________________________"+posZ+"________________________________");
+        //     // posZ = (((posZ + 0.1) % posZMax*inversionFactor));
+        // }
+        // // console.log(posZ+"|||||||"+inversionFactor);
+        // // if(posZ <= ) 
+        // camera.position.z = posZ * inversionFactor ;
+        // // console.log(camera.position.z); 
     }
     return camera;
 }
